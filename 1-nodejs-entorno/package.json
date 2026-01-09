@@ -1,0 +1,12 @@
+{
+  "name": "1-nodejs-entorno",
+  "version": "1.0.0",
+  "description": "**¿Qué es JavaScript?** JavaScript es un lenguaje de programación interpretado, dinámico y de alto nivel, utilizado principalmente para el desarrollo web.",
+  "main": "01-hola-nodejs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

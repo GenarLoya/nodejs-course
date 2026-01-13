@@ -16,7 +16,7 @@ Uso de fs, path y os para manejo de archivos, rutas e información del sistema.
 ---
 
 ### 2. Gestión de dependencias y herramientas de ejecución
-#### 2.1 npm a profundidad
+#### 2.1 ¿Qué es npm?
 Gestión de dependencias y devDependencies, semver, resolución de versiones, node_modules y buenas prácticas.
 
 #### 2.2 Uso de npx

@@ -22,9 +22,6 @@ Gestión de dependencias y devDependencies, semver, resolución de versiones, no
 #### 2.2 Uso de npx
 Diferencias entre npm y npx, ejecución de paquetes sin instalación global y ventajas en entornos de desarrollo.
 
-#### 2.3 Control de versiones con Git y GitHub
-Inicialización de repositorios, control de cambios y publicación de proyectos.
-
 ---
 
 ### 3. TypeScript para desarrollo backend

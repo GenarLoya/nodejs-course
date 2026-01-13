@@ -1,0 +1,20 @@
+{
+  "name": "2-npm",
+  "version": "1.0.0",
+  "description": "npm (Node Package Manager) es el gestor de paquetes predeterminado para Node.js. Permite a los desarrolladores instalar, compartir y gestionar bibliotecas y herramientas de terceros que facilitan el desarrollo de aplicaciones.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "serve": "serve ./assets"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "cowsay": "^1.6.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.5"
+  }
+}

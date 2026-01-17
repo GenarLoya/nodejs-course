@@ -46,7 +46,7 @@ Uso de Express como framework, creación de rutas básicas y comparación con se
 #### 4.3 Validación de datos con Zod
 Creación de esquemas y validación de datos de entrada.
 
-### 4.4 Middlewares en Express
+#### 4.4 Middlewares en Express
 Concepto de middleware, uso de middlewares nativos y personalizados.
 ---
 

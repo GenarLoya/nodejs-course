@@ -33,7 +33,7 @@ console.log("\n=== COMBINAR OBJETOS ===");
 // Combinar objetos (sobrescribe propiedades duplicadas)
 const datosBasicos = { nombre: "Pedro", edad: 30 };
 const datosExtra = { email: "pedro@ejemplo.com", edad: 31 };
-const usuarioCompleto = { ...datosBasicos, ...datosExtra };
+const usuarioCompleto = { ...datosBasicos, ...datosExtra, nombre: "Tere" };
 console.log("Usuario completo:", usuarioCompleto);
 
 console.log("\n=== AGREGAR PROPIEDADES ===");
@@ -43,7 +43,7 @@ const producto = { nombre: "Laptop", precio: 1000 };
 const productoConDescuento = {
   ...producto,
   descuento: 10,
-  precioFinal: 900
+  precioFinal: 900,
 };
 console.log("Producto con descuento:", productoConDescuento);
 

@@ -58,7 +58,15 @@ async function procesarUsuario(id) {
 // Fetch API con Promise
 function fetchDatosPromise(url) {
   fetch(url)
-    .then((res) => res.json())
+    .then((res) => {
+      console.log("Resolved with status: ", res.status)
+
+      if (!res.ok) {
+        throw new Error("Error en la peticion")
+      }
+
+      return res.json()
+    })
     .then((data) => {
       console.log("Datos obtenidos con Promise:", data);
     })
@@ -71,6 +79,11 @@ function fetchDatosPromise(url) {
 async function fetchDatosAsync(url) {
   try {
     const res = await fetch(url);
+
+    if (!res.ok) {
+      throw new Error("Error en la peticion")
+    }
+
     const data = await res.json();
     console.log("Datos obtenidos con Async/Await:", data);
   } catch (error) {
@@ -102,18 +115,12 @@ async function main() {
 
   console.log("\n=== FETCH API ===\n");
 
-  const url = "https://jsonplaceholder.typicode.com/posts/1";
+  const url = "https://jsonplaceholder.typicode.com/postss/1";
 
   // Llamar ambas funciones de fetch
   await fetchDatosPromise(url)
-    .then(() => {
-      console.log("Fetch con Async/Await completado");
-    })
-    .catch((error) => {
-      console.error("Error en fetchDatosAsync:", error.message);
-    });
-  const datos = await fetchDatosAsync(url);
-  console.log("Datos fetch async/await:", datos);
+
+  await fetchDatosAsync(url);
 }
 
 main();

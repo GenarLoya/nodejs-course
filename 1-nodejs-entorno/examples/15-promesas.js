@@ -37,8 +37,8 @@ setTimeout(() => {
   console.log("Solicitando usuario con ID -1...");
   obtenerUsuario(-1)
     .then(usuario => console.log(usuario))
-    .catch(error => console.error("Error capturado:", error.message));
-}, 2000);
+    .catch(error => console.error("Error capturado:", error.stack));
+}, 1500);
 
 // Estados de una promesa:
 // 1. pending (pendiente)

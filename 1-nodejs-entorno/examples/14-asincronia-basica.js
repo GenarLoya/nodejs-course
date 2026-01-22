@@ -4,14 +4,23 @@ console.log("=== CÓDIGO BLOQUEANTE vs NO BLOQUEANTE ===\n");
 
 // ❌ Código bloqueante (síncrono)
 console.log("Inicio bloqueante");
+console.time()
 
 // Operación costosa que bloquea
 let suma = 0;
-for (let i = 0; i < 1000000000; i++) {
-  suma += i;
+const largeArray = Array.from({ length: 10 }).fill(1)
+
+for (const n in largeArray) {
+  console.log(n)
 }
 
 console.log("Fin bloqueante (después de esperar)");
+console.timeEnd()
+
+largeArray.forEach((e, i) => console.log(i))
+
+console.log("Inicia operacion asincrona")
+largeArray.forEach(async (e,i) => console.log(i))
 
 // ✅ Código no bloqueante (asíncrono)
 console.log("\nInicio no bloqueante");

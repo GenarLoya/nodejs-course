@@ -2,8 +2,7 @@
 
 /*
 En este ejercicio trabajarás con un array de objetos que representa una lista de estudiantes, cada uno con su nombre y calificación final.
-Deberás utilizar los métodos de arrays de JavaScript (como map, filter, reduce, find, some, every, sort, etc.) para resolver las siguientes consignas.
-No es necesario resolver el ejercicio, solo plantea las soluciones utilizando los métodos mencionados.
+Deberás utilizar los métodos de arrays de JavaScript (como map, filter, reduce, find, some, every, sort, etc.) para resolver los siguientes ejercicios.
 */
 
 const estudiantes = [

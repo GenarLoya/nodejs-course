@@ -5,6 +5,8 @@ console.log("=== MÓDULO FS - FILE SYSTEM ===\n");
 
 // Crear directorio para ejemplos
 const dirEjemplos = path.join(__dirname, "temp-ejemplos");
+console.log("__dirname:",__dirname)
+console.log("dirEjemplos:", dirEjemplos)
 
 if (!fs.existsSync(dirEjemplos)) {
   fs.mkdirSync(dirEjemplos);
@@ -63,12 +65,12 @@ console.log("Archivo renombrado a:", archivoRenombrado);
 console.log("\n=== LIMPIEZA ===");
 
 // Eliminar archivos
-fs.unlinkSync(archivoTexto);
-fs.unlinkSync(archivoRenombrado);
-console.log("Archivos eliminados");
+//fs.unlinkSync(archivoTexto);
+//fs.unlinkSync(archivoRenombrado);
+//console.log("Archivos eliminados");
 
 // Eliminar directorio
-fs.rmdirSync(dirEjemplos);
-console.log("Directorio eliminado");
+//fs.rmdirSync(dirEjemplos);
+//console.log("Directorio eliminado");
 
 console.log("\n✓ Ejemplo completado");
